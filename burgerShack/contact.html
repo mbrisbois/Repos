@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css" />
+
+
+  <style>
+    form {
+      margin: 0 auto;
+      align-content: center;
+      text-align: center;
+      font-family: 'Open Sans Condensed', sans-serif;
+      width: 35%;
+    }
+
+
+      </style>
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+
+                <header>
+                  <h1 class="display-1">Burger Shack</h1>
+                  </header>
+                  <p class="lead"> New location in Rice Village coming April 2020!</p>
+        </div>
+
+
+      <nav>
+        <hr />
+        <p><a class="btn" href="index.html"> <img src="images/homeIcon.png" alt="Home Icon"></a>
+          <a class="btn" href="menu.html">Menu</a>
+          <a class="btn" href="contact.html">Contact Us</a>
+        </nav>
+        <hr />
+
+
+<div class="container">
+
+        <form name="form" id="form" onsubmit="validateForm()" method="post" class="text-center border border-light">
+          <div class="form-group row">
+          <label for "Name" class="col-md-2 col-form-label"><b>Name:</b></label>
+<div class="col-md-10">
+          <input type="text" id="Name" name="Name" class="form-control" required> </div>
+</div>
+<div class="form-group row">
+          <label for "Email" class="col-md-2 col-form-label"><b>Email:</b></label>
+<div class="col-md-10">
+          <input type="email" id="Email" name="Email" class="form-control" required> </div>
+</div>
+<div class="form-group row">
+          <label for "Phone" class="col-md-2 col-form-label"><b>Phone:</b></label>
+<div class="col-md-10">
+          <input type="tel" id="Phone" name="Phone" class="form-control" minlength=10 maxlength=10 required> </div>
+</div>
+<div class="form-group row">
+          <label for "Inquiry" class="col-form-label">Reason for Inquiry:</label>
+<div class="col">
+          <select name="Reasons" id="inquiry" class="form-control">
+            <option value="CateringDefault">Catering</option>
+            <option value="PrivateParty">Private Party</option>
+            <option value="Feedback">Feedback </option>
+            <option value="Other">Other</option>
+          </select></div></div>
+        <div class="form-group row">
+<label for "info" id="Info" class="col-form-label">Additional Information:</label>
+  <div class="col">
+      <textarea class="form-control" id="txtArea"></textarea></div></div>
+<div class="form-group row">
+            <label for "Customer" class="col-form-label">Have you been to the restaurant?</label>
+<div class="col">
+<div class="form-check form-check-inline">
+            <input type="radio" id="no" name="answer" value="NO" class="form-check-input" checked />
+            <label class="form-check-label" for="no">No</label></div>
+            <div class="form-check form-check-inline">
+            <input type="radio" id="yes" name="answer" value="YES" class="form-check-input" />
+            <label class="form-check-label" for="yes">Yes</label>
+</div></div>
+<div class="form-group row">
+<label for"Choices" class="col-form-label">Best days to contact you:</label>
+<div class="col">
+<div class="form-check-inline">
+            <label class="form-check-label" for="M">M </label>
+            <input type="checkbox" id="choices" name="choices" value="monday" class="form-check-input">
+            <label class="form-check-label" for="T">T </label>
+            <input type="checkbox" id="choices" name="choices" value="tuesday" class="form-check-input">
+            <label class="form-check-label" for="W">W </label>
+            <input type="checkbox" id="choices" name="choices" value="wednesday" class="form-check-input">
+            <label class="form-check-label" for="Th">Th </label>
+            <input type="checkbox" id="choices" name="choices" value="thursday" class="form-check-input">
+            <label class="form-check-label" for="F">F</label>
+            <input type="checkbox" id="choices" name="choices" value="friday" class="form-check-input">
+
+</div></div>
+</div> </div>
+<div class="row">
+
+            <button type="submit" id="submitButton" class="btn btn-default" onclick="validateForm();">Submit</button>
+</div>
+        </form>
+      </container>
+
+
+
+
+</div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <footer>
+          <hr />
+          <p> 305 Gray Street, Houston, TX, 77004 <br />
+            713-555-6752</p>
+            </footer>
+</body>
+
+
+<script type="text/javascript">
+
+
+var validName = false;
+var validEmail = false;
+var validPhone = false;
+
+
+function validateForm() {
+    if (validName && validEmail && validPhone) {
+        alert("Required fields have been fulfilled!");
+        console.log("Thank you for submitting your form!");
+    }
+}
+
+document.getElementById("Name").addEventListener('input', function (evt) {
+    var name = document.getElementById("Name").value;
+    validName = (name !== '');
+    validateForm();
+});
+
+document.getElementById("Email").addEventListener('input', function (evt) {
+    var email = document.getElementById("Email").value;
+    validEmail = (email != '');
+    validateForm();
+});
+
+document.getElementById("Phone").addEventListener('input', function (evt) {
+    var phone = document.getElementById("Phone").value;
+    validPhone = (phone !== '');
+    validateForm();
+});
+
+
+
+
+</script>
+</html>

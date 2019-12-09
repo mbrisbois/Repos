@@ -1,0 +1,63 @@
+
+header, footer {
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+nav {
+text-align: center;
+font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+
+}
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:active {
+  font-style: bold;
+}
+
+body {
+  background-color: #ffefdb;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.jumbotron-fluid {
+  background-color: red;
+}
+
+nav .btn {
+  background-color: white;
+}
+nav .btn:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+nav .btn:visited {
+  color: red;
+}
+nav .btn:active {
+  font-weight: bold;
+}
+nav .btn:link {
+  color: black;
+}

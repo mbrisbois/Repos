@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+
+  <title> Lucky Sevens </title>
+<style>
+#hidden {
+  display: none;
+}
+
+.table-striped tr:nth-child(odd) {
+  background-color: gray;
+}
+
+th, td {
+  border: solid 1px;
+
+}
+
+
+</style>
+
+    <script type="text/javascript" src="luckySevens.js"></script>
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container"><center>
+    <h1>Lucky Sevens</h1>
+    <form name="bet" onsubmit="return validateItems();"
+          onreset="resetForm();" class="form-inline">
+            <div class="form-group">
+                <label for="num1">Starting Bet: </label>
+                <input type="number" class="form-control" id="num1">
+            </div> <Br> <br>
+            <button type="submit" onclick="play()" id="submitButton" class="btn btn-default">Submit</button>
+
+    </form></center>
+  <div id="hidden">
+    <h2 id="status" style="clear:left;"></h2>
+    <div id="die1" class="dice">0</div>
+    <div id="die2" class="dice">0</div>
+  </div>
+    <hr />
+
+<div class="container">
+    <table id="results" class="table table-striped" style="display:none;">
+<caption colspan=2>Results</caption>
+
+<thead>
+            <tr>
+              <th scope="row">Starting Bet</th>
+                <td>$<span id="startingBet"></span>.00</td>
+            </tr>
+</thead>
+            <tbody>
+            <tr>
+                <th scope="row">Total Rolls Before Going Broke</th>
+                <td><span id="rollCount"></span></td>
+            </tr>
+            <tr>
+                <th scope="row">Highest Amount Won</th>
+                <td>$<span id="maxMoney"></span>.00</td>
+            </tr>
+            <tr>
+                <th scope="row">Roll Count at Highest Amount Win</th>
+                <td><span id="rollCountMax"></span></td>
+            </tr>
+        </tbody>
+ </table>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
