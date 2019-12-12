@@ -13,15 +13,10 @@
     <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css" />
     <style>
 
-    .centered-table {
-      margin-left: auto;
-      margin-right: auto;
-      align: center;
-      background-color: red;
-      font-family: 'Open Sans Condensed', sans-serif;
-      width: 100%;
-    }
 
+.table-primary {
+  background-color: red;
+}
 
 
 .table-striped {
@@ -66,7 +61,7 @@ h2 {
                   </header>
                   <p class="lead"> New location in Rice Village coming April 2020!</p>
         </div>
-
+</div>
 
       <nav>
         <hr />
@@ -78,83 +73,85 @@ h2 {
 
         <div class="container">
           <h2>Menu</h2>
-<div class="centered">
-<table class="centered-table">
+
+<table class="table table-primary">
 <thead>
   <tr >
-    <th scope="col">Burger and Fries</th>
-    <th scope="col">Hot Dogs and Chips</th>
-    <th scope="col">Italian Sausage and Peppers</th>
+    <div class="col-md-4"><th>Burger and Fries</th></div>
+    <div class="col-md-4"><th>Hot Dogs and Chips</th></div>
+    <div class="col-md-4"><th>Italian Sausage and Peppers</th></div>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>An American Classic!<br />
+      <div class="col-md-4"><td>An American Classic!<br />
     Your choice- with or without cheese<br />
     Pickle, onion, tomato, and lettuce<br />
     Served with our famous thick cut french fries<br />
-  </td>
-  <td>A Summer Classic!<br />
+    $7.95
+  </td></div>
+    <div class="col-md-4"><td>A Summer Classic!<br />
   Your choice- white or wheat bun<br />
   Relish, mustard, and ketchup<br />
   Served with our house-made chips<br />
-  $7.95 </td>
-  <td>
+  $7.95 </td></div>
+  <div class="col-md-4">
+      <td>
     An All-Time Favorite!<br />
     Your choice- mild or spice Cole Slaw<br />
     Served with garlic mashers<br />
-    $10.95 </td>
+    $10.95 </td></div>
   </tr>
-</tbody>
-  <thead>
+<thead>
     <tr>
-      <th scope="col">Tenderloin Sandwich and Chips</th>
-      <th scope="col"> House Salad</th>
-      <th scope="col">Brisket Sandwich and Fries</th>
+        <div class="col-md-4"><th>Tenderloin Sandwich and Chips</th></div>
+        <div class="col-md-4"><th> House Salad</th></div>
+      <div class="col-md-4"><th>Brisket Sandwich and Fries</th></div>
     </tr>
   </thead>
-    <tbody>
-      <td>
+  <tbody>
+        <div class="col-md-4"><td>
       Really Hits the Spot! <br />
       Plain or Sesame Seed Bun <br />
       Pickle, onion, tomato, and lettuce <br />
       Served with our house-made chips <br />
-      $8.95 </td>
-      <td>
+      $8.95 </td></div>
+        <div class="col-md-4"><td>
         On the Lighter Side <br />
         Your choice- with or without cheese <br />
         Iceburg lettuce, tomatoes, peppers <br />
         Thousand Island or Ranch Dressing <br />
         Served with a dinner roll<br />
-        $6.95 </td>
-        <td>
+        $6.95 </td></div>
+        <div class="col-md-4">  <td>
           A Taste of Texas! <br />
           Smoked Brisket on thick-cut Texas Toast <br />
           Cole Slaw <br />
           Served with our famous thick-cut french fries<br />
-          $7.95</td>
+          $7.95</td></div>
+        </tbody>
 </table> </div>
 <br />
 <div class="container">
   <h2>Beverages</h2>
 
-<div class="centered">
+<div class="table">
 <table class="table table-striped">
 <tbody>
-  <td>Root Beer</td>
-  <td> $3.00 </td>
+    <div class="col-md-6"><td>Root Beer</td></div>
+    <div class="col-md-6"><td> $3.00 </td></div>
 </tr>
 <tr>
-  <td> Bottled Water </td>
-  <td> $1.25 </td>
+    <div class="col-md-6"><td> Bottled Water </td></div>
+  <div class="col-md-6"><td> $1.25 </td></div>
 </tr>
 <tr>
-  <td>Lemonade</td>
-  <td>$1.00</td>
+    <div class="col-md-6"><td>Lemonade</td></div>
+    <div class="col-md-6"><td>$1.00</td></div>
 </tr>
 <tr>
-  <td> Iced Tea </td>
-  <td> $1.25</td>
+    <div class="col-md-6"><td> Iced Tea </td></div>
+    <div class="col-md-6"><td> $1.25</td></div>
 </tbody>
 </table>
 </div>
